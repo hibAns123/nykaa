@@ -1,0 +1,487 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+    overflow-x: scroll;
+}
+nav{
+    
+    z-index: 1;
+}
+.nav1{
+    width: 100%;
+    height: 70px;
+    background-image: linear-gradient(to top left,rgb(255, 108, 172),rgb(248, 156, 194),pink,rgb(250, 248, 248));
+    
+    
+    
+    
+}
+.poping{
+    position: relative;
+    overflow: hidden;
+}
+.pop{
+     
+    bottom: -100px; /* Initially hidden below */
+    left: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+    animation: slideUp 2s forwards ease-in-out; /* Animation */
+    padding: 20px;
+    animation-iteration-count: infinite;
+     /* Delay start by 5 seconds */
+    
+    
+}
+.pop a{
+    margin: 0;
+    color: black;
+}
+.pop a:hover{
+    color: white;
+}
+.mob{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+}
+@keyframes slideUp {
+    0% {
+        transform: translateY(-50%, 100%); /* Adjust initial translation */
+      opacity: 0;
+    }
+    100% {
+        transform: translateY(0); /* Display at the center */
+      opacity: 1;
+    }
+  }
+  .mob{
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  .mob1{
+    margin-top: 0px;
+    margin-right: 20px;
+    max-width: 100%;
+    flex-wrap: nowrap;
+  }
+  
+  .mob1:hover {
+    color: #ffffff;
+  }
+
+.right{
+    margin-right: 20px;
+    display: flex;
+    padding-top: 0px;
+    margin-top: 0px;
+    max-width: 100%;
+}
+.navbar2{
+    height: 50px;
+    margin-top: 0px;
+
+}
+.navbar2 h6:hover{
+    color: rgb(225, 23, 148);
+}
+.nykaa{
+    width: 90px;
+    height: 30px;
+    padding: 0px;
+    margin: 0px;
+}
+.button{
+    background-color: rgb(239, 60, 168);
+}
+.blr{
+    background-color: rgb(238, 58, 118);
+    border: 0px;
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0px;
+    columns: white;
+    font-weight: 600px;
+
+}
+.blr>p{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+.bgc{
+    background-color: gray;
+}
+.drop{
+    display: flex;
+}
+.navbar3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.navbar3 a{
+    text-decoration: none;
+    font-weight:600px ;
+    color: rgb(89, 88, 88);
+}
+form{
+    margin-right: 10px;
+}
+.navbar3 a:hover{
+    color: rgb(253, 1, 190);
+}
+.offer{
+    width: 90px;
+}
+.line{
+    display: flex;
+    height: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient(to right,rgb(65, 95, 159),rgb(98, 136, 179),rgb(175, 175, 251),rgb(175, 175, 255),rgb(98, 136, 179),rgb(65, 95, 159));
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+   
+}
+.categories{
+    margin: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+.gallery{
+    
+    position: relative;
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 0 60px; /* Adjust padding for arrows */
+    margin-bottom: 20px;
+    width: calc(100%-120px);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+.row{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center gallery items */
+   
+  overflow: hidden;
+  flex-wrap: nowrap;
+  padding: 10px;
+  width: max-content;
+  margin-bottom: -20px; /* Compensate for negative margin */
+}
+.col{
+    flex-shrink: 0;
+    margin-right: 10px;
+    min-width: 150px;
+    max-width: calc(100vw - 140px); /* Responsive max-width */
+    overflow: hidden;
+    
+}
+
+.arrow {
+    position: absolute;
+    display:  inline-block;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(223, 223, 223, 0.5);
+  border: 0px;
+  border-radius: 100px;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  z-index: 2;
+  transition: transform 0.3s ease; /* Add transition for smooth movement */
+  }
+
+  .arrow.prev {
+  left: 10px;
+ ;
+}
+.arrow.next {
+    right: 10px;
+    ;
+  }
+  
+ 
+.col>img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.begin{
+    justify-content: space-around;
+}
+.brand{
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 70px;
+    cursor: pointer;
+}
+.br>a>img{
+    width: 150px;
+}
+.best>img{
+    width: 100%;
+
+}
+
+.gallerys{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    cursor: pointer;
+    
+    
+}
+.gallerys::-webkit-scrollbar{
+    display: none;
+}
+
+.gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+    
+
+}
+del{
+    text-decoration: line-through;
+    /* Additional styling if needed */
+    color: rgb(70, 69, 69); /* Change color */
+    opacity: 0.5;
+}
+span{
+    color: green;
+}
+.deal>img{
+    width: 100%;
+}
+
+.top>img{
+    width: 200px;
+    
+}
+.steal{
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    cursor: pointer;
+    
+}
+.its{
+    border: 0px;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+.smallde{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+.off{
+    width: 180px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 30px;
+}
+.off>img{
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.seen>img{
+    width: 100%;
+    cursor: pointer;
+}
+.whisper>img{
+    width: 100%;
+    cursor: pointer;
+
+}
+.before{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 20px;
+    
+}
+.bfr{
+    margin: 40px auto;
+}
+.bfr>img{
+    width: 200px;
+    height: 250px;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+.many>img{
+    width: 100%;
+}
+.so1{
+width: 200px;
+cursor: pointer;
+}
+.so1>img{
+width:200;
+cursor: pointer;
+}
+.lar>img{
+    width: 100%;
+    cursor: pointer;
+}
+.many1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.sm{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+    cursor: pointer;
+    
+}
+
+.sm1>img{
+    width: 100px;
+    border-radius: 10px;
+}
+.ima>img{
+width: 100%;
+}
+.make{
+    margin: 10px;
+}
+.make>img{
+    width:300px;
+    cursor: pointer;
+    
+
+}
+.all{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.make>h3{
+    size: 0px;
+    text-align: center;
+}
+footer{
+    width: 100%;
+}
+.footer1{
+    background-color: rgb(47, 45, 55);
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    padding: 20px;
+}
+
+.l2>img{
+    width: 200px;
+}
+.footer2{
+    display: flex;
+    justify-content: space-around;
+    background-color: gray;
+    padding: 20px;
+}
+.c1>a>img{
+    width: 100px;
+}
+.c1>h6{
+    color: white;
+}
+.c1>a{
+    display: block;
+    text-decoration: none;
+    color: white;
+
+}
+.footer3{
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    justify-content: space-around;
+}
+.terms{
+    background-color: rgb(255, 0, 153);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    
+}
+.conditions>a{
+text-decoration: none;
+color: white;
+
+}
+.conditions>a>p{
+    font-size: 15px;
+}
+.pnk{
+    background-color: rgb(255, 0, 153);
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.popular{
+    padding-top:20px ;
+}
+.popular>h4{
+    color: rgb(84, 84, 84);
+}
+.popular>p{
+    color: rgb(93, 93, 93);
+}
+.begin>img{
+    width: 100%;
+}
+.lines{
+    display: flex;
+    justify-content: space-around;
+}
+.like{
+    display: block;
+    text-align: center;
+}
+.lines>p{
+    size: 20px;
+    font-size:15px;
+    font-weight: 700px;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
